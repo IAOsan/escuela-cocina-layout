@@ -1,0 +1,57 @@
+include ../mixins/mixins
+doctype html
+html(lang='es')
+   head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      link(rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" sizes="any")
+      meta(name='Description' content='Escuela de cocina')
+      //- fonts
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet")
+      //- bootstrap
+      link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css')
+      link(rel='stylesheet' href='css/main.css')
+      title Escuela de cocina
+   body
+      .navigation
+         .container 
+            nav.navbar.navbar-light.navbar-expand-lg.align-items-center
+               a.navbar-brand(href="index.html") 
+                  img.logo(src="assets/img/logo.svg", alt="Enlace a pagina principal, escuela de cocina")
+               button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar-main' aria-controls='navbar-main' aria-expanded='false' aria-label='Mostrar navegacion')
+                  .icon-box
+                     .icon-navbar
+               #navbar-main.collapse.navbar-collapse
+                  ul.navbar-nav.w-100.justify-content-end
+                     li.nav-item
+                        a.nav-link.text-uppercase(href="#") nosotros
+                     li.nav-item
+                        a.nav-link.text-uppercase(href="#") clases
+                     li.nav-item
+                        a.nav-link.text-uppercase(href="#") galeria
+                     li.nav-item
+                        a.nav-link.text-uppercase(href="#") contacto
+      block home
+      footer.footer.py-4
+         .container
+            .row
+               .col-lg-6.col-md-7
+                  nav.navbar.navbar-light
+                     ul.navbar-nav.w-100.flex-md-row.justify-content-between.text-center
+                        li.nav-item
+                           a.nav-link.text-uppercase(href="#") nosotros
+                        li.nav-item
+                           a.nav-link.text-uppercase(href="#") clases
+                        li.nav-item
+                           a.nav-link.text-uppercase(href="#") galeria
+                        li.nav-item
+                           a.nav-link.text-uppercase(href="#") contacto
+               .col-lg-6.col-md-5
+                  p.text-center.text-md-right.p-0.m-0
+                     small Todos los derechos reservados
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js')

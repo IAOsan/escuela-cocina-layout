@@ -1,0 +1,14 @@
+mixin course(img="clase1.jpg",title="Titulo", info=['20/Mayo/2021', '00:00hrs', '0.00'], link="#")
+   article.course.card.mb-5
+      img.card-img-top(src=`assets/img/${img}`, alt="" aria-hidden="true")
+      .card-meta.py-3.px-1.px-md-3.text-white.text-center
+         |#{info[0]} #{info[1]}
+         span.price $#{info[2]}
+      .card-body 
+         h3.card-title #{title}
+         if block 
+            block 
+         else 
+            P NO SUBTITLE
+            p NO DESCRIPTION
+         a.link(href=link) Más información

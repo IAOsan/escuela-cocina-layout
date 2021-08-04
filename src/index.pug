@@ -1,0 +1,69 @@
+extends ./pug/templates/template
+block home
+   main 
+      .about-us.container-fluid
+         .row 
+            .col-lg-6.bg.bg-color-1.d-flex.flex-column.align-items-center.justify-content-center.text-white
+               .content.content-1
+                  h2.heading.text-uppercase 20 años de experiencia
+                  p.paragraph Nos respaldan, siempre ofreciendo los mejores cursos para principiantes y expertos
+            .col-lg-6.bg.bg-img-1
+         .row 
+            .col-lg-6.bg.bg-img-2
+            .col-lg-6.bg.bg-color-2.d-flex.flex-column.align-items-center.justify-content-center
+               .content.content-2
+                  h2.heading.text-uppercase sobre nosotros
+                  p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi hic dolores vitae qui voluptates, nam cumque quo, ipsa soluta dolorem dolorum rem veniam distinctio!
+                  p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic! Illum est eum commodi fugit.
+      section.why-us.text-center.py-5
+         h2.heading-section ¿Porqué estudiar con nosotros?
+         .container
+            .row.px-3.px-md-0
+               .col-md-4
+                  span.icon.chef
+                  h3.heading.text-capitalize chef´s especialistas
+                  p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit necessitatibus architecto.
+               .col-md-4
+                  span.icon.wine
+                  h3.heading.text-capitalize incluye todo sobre bebidas
+                  p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi suscipit assumenda qui?
+               .col-md-4
+                  span.icon.menu
+                  h3.heading.text-capitalize siempre actualizado
+                  p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, natus omnis.
+      section.courses.pt-5
+         h2.heading-section Próximas clases
+         .container
+            .row.pt-5.px-3.px-md-0
+               .col-lg-4.col-md-6
+                  +course('clase1.jpg', 'Comida italiana para principiantes', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 Aprende las bases de la comida italiana con este curso
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+               .col-lg-4.col-md-6
+                  +course('clase2.jpg', 'Planeacion de menus para bodas', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 Añade la planeacion de menús para bodas a tus habilidades
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+               .col-lg-4.col-md-6
+                  +course('clase3.jpg', 'Preparacion de pasteles', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 Aprende a preparar deliciosos postres con este curso
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+               .col-lg-4.col-md-6
+                  +course('clase4.jpg', 'Comida mexicana', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 Prepara la mejor comida mexicana con este curso
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+               .col-lg-4.col-md-6
+                  +course('clase5.jpg', 'Comida de Marruecos', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 Aprende deliciosas recetas de la comida marroqui
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+               .col-lg-4.col-md-6
+                  +course('clase6.jpg', 'Prepara diez tipos de ensaladas', ['20/Mayo/2021', '18:00hrs', '400'])
+                     p.card-subtitle.my-3 En este curso aprenderas hasta diez tipos de ensaladas
+                     p.card-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis quos dolor reprehenderit magnam. Voluptas cupiditate quod veniam nam dolorum.
+      section.banner
+         .container.text-center.text-white
+            .row.justify-content-center
+               .col-12.col-md-8
+                  h3.heading ¿Quieres ser Chef?
+                  p.paragraph Estudia la licenciatura para convertirte en Chef con nosotros
+                  a.btn.text-uppercase.py-3(href="#") más información
+   
